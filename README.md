@@ -1,29 +1,35 @@
-# Introduction
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamid's Introduction</title>
+    <title>Hamid's Personal Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #0078D7;
+            background-color: #4CAF50;
             color: white;
-            padding: 20px 10px;
             text-align: center;
+            padding: 30px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
         }
         nav {
-            margin: 0;
-            padding: 10px 0;
             text-align: center;
-            background: #333;
+            background-color: #333;
+            padding: 10px 0;
         }
         nav a {
             color: white;
@@ -36,89 +42,106 @@
         }
         .container {
             max-width: 1200px;
-            margin: auto;
+            margin: 20px auto;
             padding: 20px;
         }
-        .intro {
-            text-align: center;
-            padding: 20px 0;
+        .section {
+            margin-bottom: 40px;
         }
-        .intro h1 {
-            font-size: 2.5em;
+        .section h2 {
+            font-size: 2em;
             margin-bottom: 10px;
         }
-        .intro p {
-            font-size: 1.2em;
-            margin: 0 auto;
-            max-width: 800px;
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
         }
-        .projects {
-            margin-top: 40px;
-        }
-        .project {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+        .profile-photo {
+            text-align: center;
             margin-bottom: 20px;
-            padding: 20px;
         }
-        .project h2 {
-            margin-top: 0;
+        .profile-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4CAF50;
         }
         footer {
             text-align: center;
-            padding: 20px;
             background-color: #333;
             color: white;
+            padding: 20px;
             margin-top: 40px;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>Hi, I'm Hamid - Exploring the intersection of Machine Learning, Signal Processing, and Engineering.</p>
+    <h1>Hamid's Personal Profile</h1>
+    <p>Welcome to my personal space where you can learn more about me and my work.</p>
 </header>
 
 <nav>
     <a href="#about">About Me</a>
-    <a href="#projects">My Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
-    <section id="about" class="intro">
-        <h1>About Me</h1>
-        <p>I am a researcher and engineer specializing in data-driven approaches for signal decomposition, uncertainty quantification, and stochastic modeling. My work spans various fields, including mechanical systems, aerospace, and manufacturing.</p>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="profile-photo">
+            <img src="profile-photo.jpg" alt="Hamid's Photo">
+        </div>
+        <p>Hi, I am Hamid, a researcher and engineer specializing in data-driven approaches for signal processing, uncertainty quantification, and machine learning. With a background in mechanical engineering and experience in academic and industrial projects, I am passionate about solving complex problems in mechanical systems, manufacturing, and aerospace applications.</p>
     </section>
 
-    <section id="projects" class="projects">
-        <h1>My Projects</h1>
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Machine Learning and Data Analysis</li>
+            <li>Signal Processing and Stochastic Modeling</li>
+            <li>Uncertainty Quantification and Bayesian Methods</li>
+            <li>Programming: Python, MATLAB, SQL</li>
+            <li>Cloud Platforms: Microsoft Azure</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
         <div class="project">
-            <h2>1. Robust Signal Decomposition</h2>
-            <p>Developed novel methods for separating impulsive and stationary signal components using Sparse NMF based on Maximum Correntropy Criterion (MCC).</p>
+            <h3>1. Robust Signal Decomposition</h3>
+            <p>Developed novel Sparse NMF methods based on Maximum Correntropy Criterion to separate signal components effectively in noisy environments.</p>
         </div>
         <div class="project">
-            <h2>2. Fleet Monitoring Framework</h2>
-            <p>Designed strategies for monitoring multiple engines under noisy conditions, integrating machine learning and Bayesian approaches.</p>
+            <h3>2. Fleet Monitoring Framework</h3>
+            <p>Designed strategies for monitoring multiple engines under noisy conditions using advanced machine learning and Bayesian approaches.</p>
         </div>
         <div class="project">
-            <h2>3. Manufacturing Process Monitoring</h2>
-            <p>Utilized sensing technologies and machine learning to optimize in-process monitoring of manufacturing systems.</p>
+            <h3>3. Manufacturing Process Monitoring</h3>
+            <p>Utilized sensing technologies and machine learning to optimize monitoring and control of manufacturing systems.</p>
         </div>
     </section>
 
-    <section id="contact" class="intro">
-        <h1>Contact</h1>
-        <p>If you'd like to collaborate or learn more about my work, feel free to reach out:</p>
-        <p>Email: hamid@example.com</p>
-        <p>GitHub: <a href="https://github.com/hamid" target="_blank">github.com/hamid</a></p>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>If you’d like to collaborate or learn more about my work, feel free to reach out:</p>
+        <ul>
+            <li>Email: <a href="mailto:hamid@example.com">hamid@example.com</a></li>
+            <li>GitHub: <a href="https://github.com/hamid" target="_blank">github.com/hamid</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/hamid" target="_blank">linkedin.com/in/hamid</a></li>
+        </ul>
     </section>
 </div>
 
 <footer>
-    <p>&copy; 2024 Hamid - All Rights Reserved</p>
+    <p>&copy; 2024 Hamid. All rights reserved. Built with passion and dedication.</p>
 </footer>
 
 </body>
