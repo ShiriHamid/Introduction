@@ -1,85 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamid's Personal Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
-        }
-        nav {
-            text-align: center;
-            background-color: #333;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        .section p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        .profile-photo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .profile-photo img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #4CAF50;
-        }
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            margin-top: 40px;
-        }
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
+<?php
+/**
+ * Template Name: Hamid Personal Profile
+ */
+get_header();
+?>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    header p {
+        margin: 10px 0 0;
+        font-size: 1.2em;
+    }
+    nav {
+        text-align: center;
+        background-color: #333;
+        padding: 10px 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .section {
+        margin-bottom: 40px;
+    }
+    .section h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .section p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+    .profile-photo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .profile-photo img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #4CAF50;
+    }
+    footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    footer a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+</style>
 
 <header>
     <h1>Hamid's Personal Profile</h1>
@@ -97,7 +96,7 @@
     <section id="about" class="section">
         <h2>About Me</h2>
         <div class="profile-photo">
-            <img src="profile-photo.jpg" alt="Hamid's Photo">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/profile-photo.jpg" alt="Hamid's Photo">
         </div>
         <p>Hi, I am Hamid, a researcher and engineer specializing in data-driven approaches for signal processing, uncertainty quantification, and machine learning. With a background in mechanical engineering and experience in academic and industrial projects, I am passionate about solving complex problems in mechanical systems, manufacturing, and aerospace applications.</p>
     </section>
@@ -144,5 +143,4 @@
     <p>&copy; 2024 Hamid. All rights reserved. Built with passion and dedication.</p>
 </footer>
 
-</body>
-</html>
+<?php get_footer(); ?>
